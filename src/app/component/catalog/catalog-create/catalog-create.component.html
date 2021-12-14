@@ -1,0 +1,131 @@
+
+
+<form class="forms">
+    <mat-card class="card1">
+        <form class="form" [formGroup]="form">
+            <mat-form-field appearance="fill">
+                <mat-label>Хужжат тури</mat-label>
+                <mat-select [formControl]="documentControl" name="document">
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let document of documents" [value]="document.value">
+                        {{document.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!--  -->
+            <mat-form-field appearance="fill">
+                <mat-label>Хужжат тури</mat-label>
+                <mat-select [formControl]="documentControl" name="document">
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let document of documents" [value]="document.value">
+                        {{document.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!--  -->
+
+        </form>
+    </mat-card>
+
+    <mat-card class="card2">
+        <div class="card-title">
+            <span class="material-icons">article_black</span>
+            <h5 class="title">Маъмурий низо - Биринчи инстанция</h5>
+        </div>
+        <form class="form" [formGroup]="form">
+            <mat-form-field class="f1" appearance="fill">
+                <mat-label>Input</mat-label>
+                <input matInput>
+            </mat-form-field>
+            <!--  -->
+            <mat-form-field class="f1" color="accent" appearance="fill">
+                <mat-label>Дата документа</mat-label>
+                <input matInput [matDatepicker]="picker1">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+            <!--  -->
+            <mat-form-field class="f1" color="accent" appearance="fill">
+                <mat-label>Кирим санаси</mat-label>
+                <input matInput [matDatepicker]="picker2">
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2></mat-datepicker>
+            </mat-form-field>
+            <!--  -->
+            <mat-form-field class="f2" appearance="fill">
+                <mat-label>Тип отправки</mat-label>
+                <mat-select [formControl]="documentControl" name="document">
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let document of documents" [value]="document.value">
+                        {{document.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!--  -->
+            <mat-form-field class="f3" appearance="fill">
+                <mat-label>Манфаатдор идора</mat-label>
+                <mat-select [formControl]="documentControl" name="document">
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let document of documents" [value]="document.value">
+                        {{document.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!--  -->
+            <mat-slide-toggle class="slide-toggle">Колдик</mat-slide-toggle>
+        </form>
+    </mat-card>
+
+    <mat-card class="card3">
+        <div class="card-title">
+            <span class="material-icons">find_in_page_black</span>
+            <h5 class="title">Ариза (шикоят) мазмуни</h5>
+        </div>
+        <form class="form" [formGroup]="form">
+            <!--  -->
+            <mat-form-field class="f3" appearance="fill">
+                <mat-label>Жавобгар</mat-label>
+                <mat-select [formControl]="documentControl" name="document">
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let document of documents" [value]="document.value">
+                        {{document.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!--  -->
+            <mat-form-field class="f3" appearance="fill">
+                <mat-label>Иш туркуми</mat-label>
+                <mat-select [formControl]="documentControl" name="document">
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let document of documents" [value]="document.value">
+                        {{document.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!--  -->
+            <mat-form-field class="f3" appearance="fill">
+                <mat-label>Иккиламчи иш туркуми</mat-label>
+                <mat-select [formControl]="documentControl" name="document">
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let document of documents" [value]="document.value">
+                        {{document.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!--  -->
+            <mat-form-field class="f3" appearance="fill">
+                <mat-label>Кушимча иш туркумлари</mat-label>
+                <mat-select [formControl]="documentControl" name="document">
+                    <mat-option>None</mat-option>
+                    <mat-option *ngFor="let document of documents" [value]="document.value">
+                        {{document.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <!--  -->
+        </form>
+    </mat-card>
+
+
+
+</form>

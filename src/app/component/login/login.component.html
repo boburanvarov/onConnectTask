@@ -1,0 +1,43 @@
+
+
+<div class="login-body">
+    <mat-card class="example-card">
+        <div class="login-left">
+            <div class="img-block">
+            
+            </div>
+        </div>
+        <!-- <img class="login-img" mat-card-image src="../../../assets/5224471.png" alt="Photo of a Shiba Inu"> -->
+        <div class="login-right">
+            <div class="logo">
+                <img src="../../../assets/Group 1719.png" alt="">
+            </div>
+            <form class="example-form" [formGroup]='form' (ngSubmit)="onSubmit()">
+                <mat-form-field appearance="fill" class="login">
+                    <mat-label>Логин</mat-label>
+                    <input  matInput [type]="hide ? 'password' : 'text'"  placeholder="Логин" formControlName="login">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-error *ngIf="login?.errors?.['required']">
+                        Ism kiritish majburiy
+                      </mat-error>
+                  </mat-form-field>
+
+                  <mat-form-field appearance="fill" class="password">
+                    <mat-label>Пароль</mat-label>
+                    <input  matInput [type]="phide ? 'password' : 'text'"  placeholder="Пароль" formControlName="password">
+                    <button mat-icon-button matSuffix (click)="phide = !phide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="phide">
+                      <mat-icon>{{phide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                    <mat-error *ngIf="login?.errors?.['required']">
+                        Password kiritish majburiy
+                      </mat-error>
+                  </mat-form-field>
+              </form>
+              <button class="btn" mat-raised-button color="primary" (click)="create()" [disabled]="!this.form.valid"> 
+                kirish
+            </button>
+        </div>
+      </mat-card>
+</div>

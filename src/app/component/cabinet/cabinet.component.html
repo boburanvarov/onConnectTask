@@ -1,0 +1,31 @@
+<div class="header">
+  <img src="../../../assets/cabinet-logo.svg" alt="">
+
+  <button class="burger-btn" type="button" mat-button (click)="drawer.toggle()">
+    <span class="material-icons ">reorder</span>
+  </button>
+</div>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <ul class="menu">
+
+      <button type="button" class="menu-btn" mat-button [routerLink]="['catalogCreate']" routerLinkActive='active'>
+        <span class="material-icons">task_black</span>Руйхатга олиш
+      </button>
+      <button type="button" class="menu-btn" mat-button>
+        <span class="material-icons ">description_black</span>Маъмурий иш
+      </button>
+
+    </ul>
+  </mat-drawer>
+
+  <mat-drawer-content>
+
+
+        <router-outlet></router-outlet>
+
+ 
+ 
+
+  </mat-drawer-content>
+</mat-drawer-container>

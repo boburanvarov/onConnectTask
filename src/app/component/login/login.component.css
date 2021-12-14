@@ -1,0 +1,49 @@
+.login-body {
+  padding: 100px 0;
+  background: #4f7d96;
+}
+
+mat-card {
+  padding: 0;
+  width: 1220px;
+  height: 761px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-card .login-left {
+  width: 50%;
+  height: 100%;
+  background-color: #d1dde9;
+}
+.example-card .img-block {
+  width: 589px;
+  height: 589px;
+  background: url("../../../assets/5224471.png") no-repeat center / cover;
+  margin: 74px auto;
+}
+
+.example-card .login-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.example-card .login-right .logo {
+  margin: -160px 0 100px;
+}
+
+.login,
+.password {
+  width: 100%;
+}
+
+.btn {
+  margin-top: 16px;
+  background: #fe844b;
+  box-shadow: 0px 3px 6px #fe844b3d;
+}

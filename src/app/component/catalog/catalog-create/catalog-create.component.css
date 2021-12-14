@@ -1,0 +1,90 @@
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  padding: 10px;
+}
+
+
+mat-card .form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+mat-card .card-title {
+  border-bottom: 1px solid rgb(219, 219, 219);
+  display: flex;
+  gap: 0 5px;
+}
+
+mat-card .card-title span {
+  width: 20px;
+}
+
+mat-card .card-title .title {
+  margin-top: 3px;
+}
+mat-card .form {
+  margin-top: 10px;
+}
+
+.card2 .f1 {
+  width: 160px;
+}
+
+.card2 .f2 {
+  width: 330px;
+}
+
+.card2 .f3 {
+  width: 450px;
+}
+
+.card2 .slide-toggle {
+  margin: -10px 10px 0 0;
+}
+
+.card3 .f3 {
+  width: 392px;
+}
+
+.card4 .form {
+  flex-direction: column;
+}
+
+.card4 .block {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.card4 .block2 .f1 {
+  width: 280px;
+}
+.card4 .block2 .f2 {
+  width: 390px;
+}
+
+.card4 .block2 .f3 {
+    width: 120px;
+  }
+
+  .card4 .block2 .f4 {
+    width: 144px;
+  }
+  .card4 .block2 .f5 {
+    width: 192px;
+  }
+
+  .card4 .block2 .f6 {
+    width: 128px;
+  }
+
+.card4 .block2 .btn {
+  width: 216px;
+  height: 40px;
+  background: #fe844b 0% 0%;
+  box-shadow: 0px 3px 6px #fe844b3d;
+  border-radius: 5px;
+}
